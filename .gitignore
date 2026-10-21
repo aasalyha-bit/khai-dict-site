@@ -1,0 +1,6 @@
+﻿# IDE
+.idea/
+
+# SASS
+.sass-cache/
+*.css.map
