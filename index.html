@@ -1,15 +1,273 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage | Department of Information and Communication Technologies</title>
+    <meta name="description" content="Кафедра інформаційно-комунікаційних технологій ХАІ">
+    <title>Кафедра ІКТ ХАІ</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Вітаємо на сайті кафедри Інформаційних і комунікаційних технологій ім. О.О. Зеленського!</h1>
-    <p>Це перший тестовий варіант нашого навчального проекту.</p>
-    <img src="images/logo.svg" alt="Логотип кафедри" width="180">
-    <script src="js/main.js"></script>
+
+<header class="site-header">
+    <a class="logo" href="#home" aria-label="На головну">
+        <img src="images/logo.svg"
+             alt="Логотип кафедри ІКТ ХАІ"
+             title="Кафедра інформаційно-комунікаційних технологій">
+    </a>
+
+    <nav aria-label="Головна навігація">
+        <ul class="nav-list">
+            <li><a href="#specialties">Спеціальності</a></li>
+            <li><a href="#science">Наука</a></li>
+            <li><a href="#news">Новини</a></li>
+            <li><a href="#contacts">Контакти</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-tools">
+        <form class="search-form" role="search" action="#" method="get">
+            <label class="visually-hidden" for="site-search">Пошук по сайту</label>
+            <input id="site-search" type="search" name="q" placeholder="Пошук...">
+            <button type="submit" aria-label="Знайти">⌕</button>
+        </form>
+        <div class="languages" aria-label="Вибір мови">
+            <a href="index.html" lang="uk" aria-current="page">UA</a>
+            <span aria-hidden="true">|</span>
+            <a href="#" lang="en" title="English version (демо)">EN</a>
+        </div>
+    </div>
+</header>
+
+<main id="home">
+    <!-- Банер -->
+    <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+            <p class="eyebrow">Кафедра ІКТ ХАІ</p>
+            <h1 id="hero-title">Створюй майбутнє. Тут і зараз!</h1>
+            <p>
+                Вибери не просто освіту — обери шлях до свого технологічного
+                майбутнього! Кафедра ІКТ ХАІ — це місце, де ідеї стають
+                реальністю, а знання відкривають двері до кар’єри мрії.
+                Почни свій шлях вже сьогодні!
+            </p>
+            <a class="button" href="#specialties">Наші спеціальності</a>
+        </div>
+        <img class="hero-image"
+             src="images/hero.jpg"
+             alt="Сучасні технології та цифрові комунікації"
+             title="Технології майбутнього">
+    </section>
+
+    <!-- Спеціальності -->
+    <section class="section" id="specialties" aria-labelledby="specialties-title">
+        <p class="eyebrow">Навчайся та розвивайся</p>
+        <h2 id="specialties-title">Наші спеціальності</h2>
+        <p class="section-intro">
+            Отримай знання, які допоможуть створювати сучасні цифрові
+            рішення, розробляти системи зв’язку та працювати з інформацією.
+        </p>
+
+        <div class="card-grid">
+            <article class="card">
+                <span class="card-number">172</span>
+                <h3>Електронні комунікації та радіотехніка</h3>
+                <p>
+                    Вивчення систем передавання інформації, радіотехнічних
+                    пристроїв, мереж і телекомунікаційних технологій.
+                </p>
+            </article>
+
+            <article class="card">
+                <span class="card-number">126</span>
+                <h3>Інформаційні системи та технології</h3>
+                <p>
+                    Проєктування інформаційних систем, робота з даними,
+                    програмними рішеннями та сучасними цифровими сервісами.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Статистика -->
+    <section class="section stats-section" id="numbers" aria-labelledby="numbers-title">
+        <p class="eyebrow">Наші результати</p>
+        <h2 id="numbers-title">Якщо в числах</h2>
+
+        <div class="stats-grid">
+            <article class="stat-card">
+                <strong>2</strong>
+                <p>освітні напрями у прикладі цієї сторінки</p>
+            </article>
+            <article class="stat-card">
+                <strong>100%</strong>
+                <p>уваги до технологій та інновацій</p>
+            </article>
+            <article class="stat-card">
+                <strong>∞</strong>
+                <p>можливостей для розвитку</p>
+            </article>
+        </div>
+        <p class="note">
+            Наведені числа демонстраційні. Для реального сайту заміни їх
+            підтвердженою статистикою кафедри.
+        </p>
+    </section>
+
+    <!-- Відгуки -->
+    <section class="section" id="reviews" aria-labelledby="reviews-title">
+        <p class="eyebrow">Досвід випускників</p>
+        <h2 id="reviews-title">Що говорять випускники</h2>
+
+        <div class="carousel">
+            <article class="card review-card">
+                <p>
+                    «Навчання допомогло мені розвинути технічне мислення
+                    та краще зрозуміти принципи роботи сучасних систем».
+                </p>
+                <h3>Випускник кафедри</h3>
+                <p class="note">Демонстраційний відгук</p>
+            </article>
+
+            <article class="card review-card">
+                <p>
+                    «Практичні завдання дали можливість застосовувати
+                    знання та працювати над власними проєктами».
+                </p>
+                <h3>Випускниця кафедри</h3>
+                <p class="note">Демонстраційний відгук</p>
+            </article>
+        </div>
+
+        <div class="audio-box">
+            <h3>Аудіовідгук</h3>
+            <p>Додай аудіофайл із записом відгуку випускника.</p>
+            <audio controls preload="metadata">
+                <source src="media/review.mp3" type="audio/mpeg">
+                Ваш браузер не підтримує відтворення аудіо.
+            </audio>
+        </div>
+    </section>
+
+    <!-- Наука -->
+    <section class="section science-section" id="science" aria-labelledby="science-title">
+        <div class="science-content">
+            <p class="eyebrow">Досліджуй. Створюй. Вдосконалюй.</p>
+            <h2 id="science-title">Наука та інновації</h2>
+            <h3>Від аудиторії — до реального проєкту</h3>
+            <p>
+                Наукова діяльність допомагає студентам досліджувати нові
+                технології, перевіряти ідеї на практиці та створювати
+                рішення для сучасного цифрового світу.
+            </p>
+            <a class="button" href="#contacts">Дізнатися більше</a>
+        </div>
+        <img src="images/science.jpg"
+             alt="Робота над технологічним дослідницьким проєктом"
+             title="Наукові дослідження та інновації">
+    </section>
+
+    <!-- Партнери -->
+    <section class="section" id="partners" aria-labelledby="partners-title">
+        <h2 id="partners-title">Нам довіряють</h2>
+        <p class="section-intro">
+            Приклад блоку для логотипів компаній-партнерів кафедри.
+        </p>
+
+        <div class="partners-grid">
+            <div class="partner-logo">
+                <img src="images/company-1.jpg"
+                     alt="Логотип компанії-партнера 1"
+                     title="Компанія-партнер 1">
+            </div>
+            <div class="partner-logo">
+                <img src="images/company-2.jpg"
+                     alt="Логотип компанії-партнера 2"
+                     title="Компанія-партнер 2">
+            </div>
+        </div>
+        <p class="note">
+            Використовуй реальні логотипи лише тоді, коли маєш право їх
+            розміщувати; поки що це демонстраційні зображення.
+        </p>
+    </section>
+
+    <!-- Контакти -->
+    <section class="section contacts-section" id="contacts" aria-labelledby="contacts-title">
+        <h2 id="contacts-title">Контакти</h2>
+        <address>
+            <p><strong>Адреса:</strong> 61070, Харків, вул. Вадима Манька, 17</p>
+            <p>НАУ ім. М. Є. Жуковського «ХАІ»</p>
+            <p>Кафедра інформаційно-комунікаційних технологій №504</p>
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:k504@khai.edu">k504@khai.edu</a>
+            </p>
+            <p>
+                <strong>Телефон:</strong>
+                <a href="tel:+380995025775">+38 (099) 502-57-75</a>
+            </p>
+        </address>
+    </section>
+
+    <!-- Новини -->
+    <section class="section" id="news" aria-labelledby="news-title">
+        <p class="eyebrow">Останні події</p>
+        <h2 id="news-title">Новини</h2>
+
+        <div class="carousel">
+            <article class="card news-card">
+                <h3>Нові технології та освіта</h3>
+                <p>
+                    Приклад новинної картки для публікацій про навчання
+                    та технологічні розробки.
+                </p>
+                <video class="news-video"
+                       autoplay
+                       muted
+                       loop
+                       playsinline
+                       preload="metadata"
+                       poster="images/hero.jpg"
+                       aria-label="Демонстраційне відео про технології">
+                    <source src="media/technology.mp4" type="video/mp4">
+                    Ваш браузер не підтримує відтворення відео.
+                </video>
+                <p class="note">
+                    Демонстраційне відео відтворюється без панелі керування.
+                </p>
+            </article>
+
+            <article class="card news-card">
+                <h3>Студентські проєкти</h3>
+                <p>
+                    Тут можна розміщувати новини про проєкти, дослідження,
+                    зустрічі та події кафедри.
+                </p>
+            </article>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="footer-brand">
+        <a class="logo" href="#home">
+            <img src="images/logo.svg"
+                 alt="Логотип кафедри ІКТ ХАІ"
+                 title="Кафедра ІКТ ХАІ">
+        </a>
+        <p>Кафедра інформаційно-комунікаційних технологій №504</p>
+    </div>
+
+    <div class="footer-contacts">
+        <p>61070, Харків, вул. Вадима Манька, 17</p>
+        <p><a href="mailto:k504@khai.edu">k504@khai.edu</a></p>
+        <p><a href="tel:+380995025775">+38 (099) 502-57-75</a></p>
+    </div>
+
+    <p class="copyright">© Кафедра ІКТ ХАІ</p>
+</footer>
+
 </body>
 </html>
