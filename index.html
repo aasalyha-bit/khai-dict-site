@@ -1,15 +1,538 @@
-﻿<!DOCTYPE html>
+﻿
+<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage | Department of Information and Communication Technologies</title>
+    <meta name="description" content="Кафедра інформаційно-комунікаційних технологій ХАІ">
+    <title>Кафедра ІКТ №504 — ХАІ</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Вітаємо на сайті кафедри Інформаційних і комунікаційних технологій ім. О.О. Зеленського!</h1>
-    <p>Це перший тестовий варіант нашого навчального проекту.</p>
-    <img src="images/logo.svg" alt="Логотип кафедри" width="180">
-    <script src="js/main.js"></script>
+
+<!-- Шапка сайту -->
+<header class="site-header">
+    <div class="container header-content">
+        <a href="#home" class="logo">
+            <img src="images/logo.svg" alt="Логотип ХАІ">
+            <span>Кафедра ІКТ №504</span>
+        </a>
+
+        <nav class="main-nav">
+            <a href="#about">Про кафедру</a>
+            <a href="#specialties">Спеціальності</a>
+            <a href="#curriculum">Навчальна програма</a>
+            <a href="#science">Наука</a>
+            <a href="#contacts">Контакти</a>
+        </nav>
+
+        <div class="language">
+            <a href="#home" lang="uk">UA</a>
+            <span>|</span>
+            <a href="#home" lang="en">EN</a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Головний банер -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="eyebrow">Харківський авіаційний інститут</p>
+                <h1>Інформаційно-комунікаційні технології</h1>
+                <p>
+                    Навчайся, створюй інновації та розвивай технології
+                    майбутнього разом із ХАІ.
+                </p>
+                <a href="#feedback" class="button">Зв'язатися з нами</a>
+            </div>
+
+            <div class="hero-image">
+                <img
+                        src="images/hero.jpg"
+                        alt="Навчальний корпус та освітнє середовище ХАІ"
+                        title="Харківський авіаційний інститут"
+                >
+            </div>
+        </div>
+    </section>
+
+    <!-- Про кафедру -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2>Про кафедру</h2>
+            <p class="section-intro">
+                Кафедра готує фахівців у сфері інформаційних технологій,
+                програмування та інфокомунікаційних систем.
+                Студенти вивчають сучасні технології та розвивають
+                практичні інженерні навички.
+            </p>
+        </div>
+    </section>
+
+    <!-- Спеціальності -->
+    <section class="section section-light" id="specialties">
+        <div class="container">
+            <h2>Наші спеціальності</h2>
+
+            <div class="card-grid">
+                <article class="info-card">
+                    <h3>Інжиніринг і програмування інфокомунікаційних систем</h3>
+                    <p>
+                        Вивчення програмування, мереж, телекомунікацій
+                        та сучасних інформаційних систем.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Інформаційні технології</h3>
+                    <p>
+                        Основи розробки програмного забезпечення,
+                        роботи з даними та цифровими сервісами.
+                    </p>
+                </article>
+
+                <article class="info-card">
+                    <h3>Комп'ютерні мережі</h3>
+                    <p>
+                        Принципи побудови, налаштування та захисту
+                        комп'ютерних мереж.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Таблиця навчальної програми: практична робота №4 -->
+    <section class="section" id="curriculum">
+        <div class="container">
+            <h2>Освітня програма першого курсу</h2>
+
+            <p class="section-intro">
+                Навчальні дисципліни спеціальності
+                «Інжиніринг і програмування інфокомунікаційних систем».
+            </p>
+
+            <div class="table-wrapper">
+                <table>
+                    <caption>
+                        Приклад переліку навчальних дисциплін першого курсу
+                    </caption>
+
+                    <thead>
+                    <tr>
+                        <th scope="col">№</th>
+                        <th scope="col">Назва дисципліни</th>
+                        <th scope="col">Семестр</th>
+                        <th scope="col">Кількість годин</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Українська мова</td>
+                        <td>1</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Іноземна мова</td>
+                        <td>1</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Вища математика</td>
+                        <td>1</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Основи програмування</td>
+                        <td>1</td>
+                        <td>120</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Інформатика</td>
+                        <td>1</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Фізика</td>
+                        <td>1</td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Фізичне виховання</td>
+                        <td>1</td>
+                        <td>60</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="subject-descriptions">
+                <h3>Опис навчальних дисциплін</h3>
+
+                <article class="subject">
+                    <h4>Українська мова</h4>
+                    <p>
+                        Розвиток усного та письмового мовлення,
+                        формування навичок професійного спілкування
+                        та грамотного оформлення документів.
+                    </p>
+                </article>
+
+                <article class="subject">
+                    <h4>Іноземна мова</h4>
+                    <p>
+                        Вивчення іноземної мови для повсякденного
+                        та професійного спілкування, читання технічних
+                        текстів і роботи з документацією.
+                    </p>
+                </article>
+
+                <article class="subject">
+                    <h4>Вища математика</h4>
+                    <p>
+                        Формування математичних знань і навичок,
+                        необхідних для розв'язання інженерних,
+                        технічних та обчислювальних задач.
+                    </p>
+                </article>
+
+                <article class="subject">
+                    <h4>Основи програмування</h4>
+                    <p>
+                        Знайомство з алгоритмами, змінними, умовами,
+                        циклами та основними принципами створення
+                        комп'ютерних програм.
+                    </p>
+                </article>
+
+                <article class="subject">
+                    <h4>Інформатика</h4>
+                    <p>
+                        Основи роботи з інформацією, комп'ютерними
+                        системами, програмним забезпеченням
+                        та цифровими технологіями.
+                    </p>
+                </article>
+
+                <article class="subject">
+                    <h4>Фізика</h4>
+                    <p>
+                        Вивчення основних фізичних законів і явищ,
+                        які застосовуються в техніці, електроніці
+                        та інженерних системах.
+                    </p>
+                </article>
+
+                <article class="subject">
+                    <h4>Фізичне виховання</h4>
+                    <p>
+                        Розвиток фізичних якостей, підтримання
+                        здорового способу життя та формування
+                        навичок регулярної рухової активності.
+                    </p>
+                </article>
+            </div>
+
+            <p class="note">
+                Примітка: перелік дисциплін і кількість годин наведено
+                як приклад оформлення HTML-таблиці. Для відповідності
+                завданню замініть їх даними з навчального плану,
+                наданого викладачем.
+            </p>
+        </div>
+    </section>
+
+    <!-- Переваги навчання -->
+    <section class="section section-light" id="advantages">
+        <div class="container">
+            <h2>Якщо в числах</h2>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <strong>504</strong>
+                    <span>Номер кафедри</span>
+                </div>
+
+                <div class="stat-card">
+                    <strong>IT</strong>
+                    <span>Сучасні технології</span>
+                </div>
+
+                <div class="stat-card">
+                    <strong>∞</strong>
+                    <span>Можливості розвитку</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Наука -->
+    <section class="section" id="science">
+        <div class="container">
+            <h2>Наукова діяльність</h2>
+
+            <div class="science-content">
+                <img
+                        src="images/science.jpg"
+                        alt="Наукова та дослідницька діяльність студентів"
+                        title="Дослідження інформаційних технологій"
+                >
+
+                <div>
+                    <h3>Технології майбутнього</h3>
+                    <p>
+                        Студенти можуть розвивати навички роботи
+                        з програмуванням, мережевими технологіями,
+                        цифровими системами та інженерними проєктами.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Відгуки -->
+    <section class="section section-light" id="reviews">
+        <div class="container">
+            <h2>Відгуки студентів</h2>
+
+            <article class="review-card">
+                <h3>Навчання та професійний розвиток</h3>
+                <p>
+                    Практичні завдання допомагають закріпити
+                    теоретичні знання та отримати досвід роботи
+                    з сучасними технологіями.
+                </p>
+
+                <audio controls>
+                    <source src="media/review.mp3" type="audio/mpeg">
+                    Ваш браузер не підтримує відтворення аудіо.
+                </audio>
+            </article>
+        </div>
+    </section>
+
+    <!-- Партнери -->
+    <section class="section" id="partners">
+        <div class="container">
+            <h2>Партнери та технології</h2>
+
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img
+                            src="images/company-1.jpg"
+                            alt="Логотип компанії або технологічного партнера 1"
+                            title="Технологічний партнер 1"
+                    >
+                </div>
+
+                <div class="partner-logo">
+                    <img
+                            src="images/company-2.jpg"
+                            alt="Логотип компанії або технологічного партнера 2"
+                            title="Технологічний партнер 2"
+                    >
+                </div>
+            </div>
+            <p class="note">
+                Замініть демонстраційні зображення логотипами,
+                які дозволено використовувати у вашому проєкті.
+            </p>
+        </div>
+    </section>
+
+    <!-- Новини та відео -->
+    <section class="section section-light" id="news">
+        <div class="container">
+            <h2>Новини та технології</h2>
+
+            <article class="news-card">
+                <h3>Сучасні інфокомунікаційні системи</h3>
+                <p>
+                    Ознайомтеся з прикладом відеоматеріалу
+                    про технології та цифрові системи.
+                </p>
+
+                <video autoplay muted loop playsinline
+                       aria-label="Відео про сучасні технології">
+                    <source src="media/technology.mp4" type="video/mp4">
+                    Ваш браузер не підтримує відтворення відео.
+                </video>
+            </article>
+        </div>
+    </section>
+
+    <!-- Форма зворотного зв'язку: практична робота №4 -->
+    <section class="section feedback-section" id="feedback">
+        <div class="container">
+            <h2>Зворотний зв'язок для абітурієнтів</h2>
+
+            <p class="section-intro">
+                Маєте запитання щодо вступу або навчання?
+                Заповніть форму, щоб повідомити нам, що вас цікавить.
+            </p>
+
+            <form class="feedback-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Ваше ім'я *</label>
+                    <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Введіть ваше ім'я"
+                            autocomplete="name"
+                            required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Електронна пошта *</label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                            autocomplete="email"
+                            required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Номер телефону</label>
+                    <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="+380..."
+                            autocomplete="tel"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="specialty">Спеціальність *</label>
+                    <select id="specialty" name="specialty" required>
+                        <option value="">Оберіть спеціальність</option>
+                        <option value="ikks">
+                            Інжиніринг і програмування
+                            інфокомунікаційних систем
+                        </option>
+                        <option value="it">
+                            Інформаційні технології
+                        </option>
+                        <option value="networks">
+                            Комп'ютерні мережі
+                        </option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="study-format">Форма навчання</label>
+                    <select id="study-format" name="study-format">
+                        <option value="">Оберіть форму навчання</option>
+                        <option value="full-time">Денна</option>
+                        <option value="part-time">Заочна</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ваше запитання *</label>
+                    <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Напишіть ваше запитання..."
+                            required
+                    ></textarea>
+                </div>
+
+                <div class="form-checkbox">
+                    <input
+                            type="checkbox"
+                            id="privacy"
+                            name="privacy"
+                            required
+                    >
+                    <label for="privacy">
+                        Погоджуюся на обробку наданих даних для відповіді
+                        на моє звернення.
+                    </label>
+                </div>
+
+                <button type="submit" class="button">
+                    Надіслати повідомлення
+                </button>
+
+                <p class="form-note">
+                    Поля, позначені зірочкою (*), обов'язкові.
+                    Демонстраційна форма не надсилає дані на сервер.
+                </p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Контакти -->
+    <section class="section" id="contacts">
+        <div class="container">
+            <h2>Контакти</h2>
+
+            <div class="contact-card">
+                <p>
+                    <strong>Університет:</strong>
+                    Національний аерокосмічний університет
+                    «Харківський авіаційний інститут»
+                </p>
+
+                <p>
+                    <strong>Кафедра:</strong> ІКТ №504
+                </p>
+
+                <p>
+                    <strong>Адреса:</strong>
+                    61070, Україна, м. Харків, вул. Вадима Манька, 17
+                </p>
+
+                <p>
+                    <strong>Електронна пошта:</strong>
+                    <a href="mailto:k504@khai.edu">k504@khai.edu</a>
+                </p>
+
+                <p>
+                    <strong>Телефон:</strong>
+                    <a href="tel:+380995025775">+38 (099) 502-57-75</a>
+                </p>
+            </div>
+
+            <p class="note">
+                Перед публікацією перевірте актуальність контактних даних.
+            </p>
+        </div>
+    </section>
+</main>
+
+<!-- Підвал сайту -->
+<footer class="site-footer">
+    <div class="container footer-content">
+        <a href="#home" class="logo footer-logo">
+            <img src="images/logo.svg" alt="Логотип ХАІ">
+            <span>Кафедра ІКТ №504</span>
+        </a>
+
+        <p>
+            © 2026 Кафедра інформаційно-комунікаційних технологій.
+        </p>
+
+        <a href="#home">На початок сторінки ↑</a>
+    </div>
+</footer>
+
 </body>
 </html>
