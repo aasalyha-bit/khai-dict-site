@@ -1,0 +1,20 @@
+// Відгуки
+#reviews {
+  .review-card {
+    @include card;
+    background-color: $background-color;
+  }
+}
+
+.review-card {
+  h3 {
+    color: $brand-color;
+  }
+
+  audio {
+    display: block;
+    width: 100%;
+    max-width: 480px;
+    margin-top: 16px;
+  }
+}
