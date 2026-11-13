@@ -1,0 +1,28 @@
+// Новини
+#news {
+  .news-card {
+    padding: 0;
+    background-color: $background-color;
+
+    &:not(:last-child) {
+      border-left: 1px solid $red;
+    }
+  }
+
+  .news-content {
+    padding: 10px;
+  }
+}
+
+.news-card {
+  h3 {
+    color: $brand-color;
+  }
+
+  video {
+    width: 100%;
+    max-height: 420px;
+    object-fit: cover;
+    background-color: #222222;
+  }
+}

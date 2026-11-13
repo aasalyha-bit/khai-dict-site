@@ -1,0 +1,21 @@
+// Головний файл SCSS
+
+// Змінні
+@import "variables/breakpoints";
+@import "variables/colors";
+@import "variables/fonts";
+@import "variables/typography";
+
+// Міксини
+@import "abstractions/mixins";
+
+// Базові стилі
+@import "base/general";
+@import "base/header";
+@import "base/footer";
+
+// Компоненти
+@import "components/feedbacks";
+@import "components/in-numbers";
+@import "components/news";
+@import "components/specialties";

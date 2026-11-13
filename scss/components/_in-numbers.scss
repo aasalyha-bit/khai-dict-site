@@ -1,0 +1,38 @@
+// Статистика
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+}
+
+#advantages {
+  .stat-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+
+    &:not(:last-child) {
+      border-left: 1px solid $red;
+    }
+  }
+}
+
+.stat-card {
+  strong {
+    display: block;
+    font-size: 2rem;
+    color: $brand-color;
+  }
+
+  span {
+    color: #555555;
+  }
+}
+
+// Адаптивність статистики
+@media (max-width: $layout-small) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

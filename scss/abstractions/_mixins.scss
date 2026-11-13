@@ -1,0 +1,9 @@
+// Базові відступи
+$base-padding: 20px;
+
+// Міксин для оформлення карток
+@mixin card {
+  padding: $base-padding;
+  border-radius: 20px;
+  border: 1px solid $grey;
+}

@@ -1,0 +1,36 @@
+// Спеціальності
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+#specialties {
+  .info-card {
+    @include card;
+    background-color: $background-color;
+  }
+}
+
+.info-card {
+  h3 {
+    color: $brand-color;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Адаптивність карток спеціальностей
+@media (max-width: $layout-medium) {
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: $layout-small) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
