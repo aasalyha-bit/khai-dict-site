@@ -1,0 +1,29 @@
+{
+  "name": "khai-dict-site",
+  "version": "1.0.0",
+  "description": "Створення web проекту у рамках курсу Front-end програмування.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass": "sass scss/style.scss css/style.css",
+    "sass:watch": "sass --watch scss/style.scss:css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aasalyha-bit/khai-dict-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/aasalyha-bit/khai-dict-site/issues"
+  },
+  "homepage": "https://github.com/aasalyha-bit/khai-dict-site#readme",
+  "devDependencies": {
+    "sass": "^1.108.2"
+  }
+}

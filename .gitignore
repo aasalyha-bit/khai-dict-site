@@ -4,3 +4,6 @@
 # SASS
 .sass-cache/
 *.css.map
+
+# Dependencies
+node_modules/
