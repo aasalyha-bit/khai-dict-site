@@ -1,2 +1,9 @@
+// Підключення шрифтів Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Geologica:wght@100..900&display=swap');
+
 // Шрифти сайту
-$font-stack: Arial, Helvetica, sans-serif;
+$geologica: 'Geologica', sans-serif;
+$comfortaa: 'Comfortaa', sans-serif;
+
+// Основний шрифт сайту
+$font-stack: $comfortaa;

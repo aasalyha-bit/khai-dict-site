@@ -1,11 +1,38 @@
-// Кольори сайту
-$main-color: #252525;
-$secondary-color: #3498db;
-$grey: #8e8e8e;
-$red: #FF3A3A;
+// Кольорова палітра сайту
 
+// Основні кольори
+$primary: #1d1d1d;
+$main-color: $primary;
+$grey: #7c7c7c;
+$primary-light: #f8f8f8;
+$red: #ff3b39;
+$silver: #bfbfbf;
+$red-hover: #ff1a18;
+
+// Додаткові кольори попереднього оформлення
+$secondary-color: #3498db;
 $link-color: #1456a0;
 $background-color: #ffffff;
 $border-color: #dddddd;
 $brand-color: #173d70;
 $footer-background: #f5f7fa;
+
+// CSS Custom Properties — темна тема за замовчуванням
+:root {
+  --primary-color: #{$primary};
+  --primary-text-color: #{$primary-light};
+  --red-color: #{$red};
+  --red-hover-color: #{$red-hover};
+  --grey-color: #{$grey};
+  --silver-color: #{$silver};
+}
+
+// Світла тема
+[data-theme="light"] {
+  --primary-color: #{$primary-light};
+  --primary-text-color: #{$primary};
+  --red-color: #{$red};
+  --red-hover-color: #{$red-hover};
+  --grey-color: #{$grey};
+  --silver-color: #{$silver};
+}
